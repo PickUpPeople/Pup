@@ -1,55 +1,47 @@
 {
-	"name": "gatsby-starter-sass",
-	"description": "A Gatsby starter with Sass and no assumptions",
-	"version": "0.1.2",
-	"author": "Colby Fayock <hello@colbyfayock.com>",
-	"dependencies": {
-		"gatsby": "^2.18.22",
-		"gatsby-image": "^2.2.39",
-		"gatsby-plugin-manifest": "^2.2.37",
-		"gatsby-plugin-offline": "^3.0.32",
-		"gatsby-plugin-react-helmet": "^3.1.21",
-		"gatsby-plugin-resolve-src": "^2.0.0",
-		"gatsby-plugin-robots-txt": "^1.5.0",
-		"gatsby-plugin-sass": "^2.1.27",
-		"gatsby-plugin-sharp": "^2.3.13",
-		"gatsby-plugin-sitemap": "^2.2.26",
-		"gatsby-plugin-transition-link": "^1.17.7",
-		"gatsby-source-filesystem": "^2.1.46",
-		"gatsby-source-prismic": "^2.3.0-alpha.3",
-		"gatsby-transformer-sharp": "^2.3.12",
-		"locomotive-scroll": "^3.2.7",
-		"lodash": "^4.17.15",
-		"node-sass": "^4.13.0",
-		"prop-types": "^15.7.2",
-		"react": "^16.12.0",
-		"react-dom": "^16.12.0",
-		"react-helmet": "^5.2.1",
-		"rfs": "^9.0.2"
-	},
-	"devDependencies": {
-		"dotenv": "^8.2.0"
-	},
-	"keywords": [
-		"gatsby",
-		"sass",
-		"scss"
-	],
-	"license": "MIT",
-	"scripts": {
-		"build": "gatsby build",
-		"develop": "gatsby develop",
-		"lint": "Get started linting your code with Eslint and stylelint",
-		"format": "Get started formatting your code with Eslint, Prettier, and stylelint",
-		"start": "yarn develop",
-		"serve": "gatsby serve",
-		"test": "echo 'Write tests! -> https://gatsby.dev/unit-testing'"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/colbyfayock/gatsby-starter-sass"
-	},
-	"bugs": {
-		"url": "https://github.com/colbyfayock/gatsby-starter-sass/issues"
-	}
+  "name": "pup",
+  "description": "Pick up People photography site",
+  "version": "1",
+  "author": "Adam Wright <adam.wright90@yahoo.co.uk>",
+  "dependencies": {
+    "gatsby": "^2.18.22",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-manifest": "^2.2.37",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-resolve-src": "^2.0.0",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sharp": "^2.3.13",
+    "gatsby-plugin-sitemap": "^2.2.26",
+    "gatsby-plugin-transition-link": "^1.17.7",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-prismic": "^2.3.0-alpha.3",
+    "gatsby-transformer-sharp": "^2.3.12",
+    "locomotive-scroll": "^3.2.7",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "rfs": "^9.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "keywords": [
+    "gatsby",
+    "sass",
+    "scss"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "Get started linting your code with Eslint and stylelint",
+    "format": "Get started formatting your code with Eslint, Prettier, and stylelint",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "test": "echo 'Write tests! -> https://gatsby.dev/unit-testing'"
+  }
 }
