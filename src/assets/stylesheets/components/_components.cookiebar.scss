@@ -1,0 +1,44 @@
+.c-cookiebar {
+  background-color: transparent;
+  bottom: 0;
+  display: inline-block;
+  left: 0;
+  padding: $unit;
+  position: fixed;
+  width: 100%;
+  z-index: $z-index-4--cookiebar;
+
+  @include media-breakpoint-up(md) {
+    padding: $unit;
+  }
+}
+
+.c-cookiebar__text {
+  @include text-center;
+  color: transparent;
+}
+
+.c-cookiebar__link {
+  color: transparent;
+
+  html.no-touchevents & {
+    @include hocus {
+      text-decoration: none;
+    }
+  }
+}
+
+// Cookie Bar Modifiers
+// -----------------------------------------------------------------------------
+//
+// Purpose: Enhances or removes styles from default cookie bar
+//
+//
+// 1. Hide the cookie bar
+//
+// -----------------------------------------------------------------------------
+
+// 1
+.c-cookiebar--hidden {
+  display: none;
+}

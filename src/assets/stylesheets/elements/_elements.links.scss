@@ -1,0 +1,10 @@
+a {
+  color: $color-brand-secondary;
+  cursor: none;
+  text-decoration: underline;
+
+  @include hocus {
+    cursor: none;
+    text-decoration: none;
+  }
+}

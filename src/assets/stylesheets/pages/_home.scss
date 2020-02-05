@@ -1,0 +1,65 @@
+.page-home__circle {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 900;
+  width: 280px;
+
+  @include media-breakpoint-up(md) {
+    width: 446px;
+  }
+
+  svg {
+    transform: translate(40%, -40%);
+
+    @include media-breakpoint-up(md) {
+      transform: translate(50%, -50%);
+    }
+
+    @include media-breakpoint-up(xl) {
+      transform: translate(30%, -30%);
+    }
+
+    path {
+      fill: none;
+      stroke: $color-brand-tertiary;
+      stroke-miterlimit: 10;
+      stroke-width: 9px;
+    }
+  }
+}
+
+.page-home__thed {
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 900;
+  width: 300px;
+
+  @include media-breakpoint-up(md) {
+    width: 549px;
+  }
+
+  svg {
+    transform: translate(-40%, 40%);
+
+    @include media-breakpoint-up(md) {
+      transform: translate(-50%, 50%);
+    }
+
+    @include media-breakpoint-up(xl) {
+      transform: translate(-40%, 40%);
+    }
+
+    path {
+      fill: none;
+      stroke: $color-brand-tertiary;
+      stroke-miterlimit: 10;
+      stroke-width: 9px;
+    }
+  }
+}

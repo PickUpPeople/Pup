@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Pick Up';
+    src: url('PickUp-Regular.woff2') format('woff2'),
+        url('PickUp-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('FoundersGrotesk-Light.woff2') format('woff2'),
+        url('FoundersGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk Test';
+    src: url('FoundersGroteskTest-Bold.woff2') format('woff2'),
+        url('FoundersGroteskTest-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('Druk-WideMedium.woff2') format('woff2'),
+        url('Druk-WideMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('Miso.woff2') format('woff2'),
+        url('Miso.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+

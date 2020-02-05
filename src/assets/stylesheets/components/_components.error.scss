@@ -1,0 +1,13 @@
+.c-error {
+  @include global-component-margins;
+}
+
+.c-error__section {
+  @include global-component-margins;
+  @include make-col-ready();
+  @include make-col(12);
+
+  p {
+    margin-bottom: $unit-small;
+  }
+}

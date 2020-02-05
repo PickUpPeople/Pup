@@ -1,0 +1,55 @@
+@mixin heading() {
+	@include font-size(4rem);
+	@include font-drunk-wide();
+	line-height: 120%;
+}
+
+.heading {
+	@include heading;
+}
+
+@mixin heading-xlarge() {
+	@include font-size(6rem);
+	@include font-drunk-wide();
+	line-height: 120%;
+}
+
+.heading-xlarge {
+	@include heading-xlarge;
+}
+
+@mixin heading-large() {
+	@include font-size(3rem);
+	@include font-pick-up();
+	line-height: 120%;
+}
+
+.heading-large {
+	@include heading-large;
+}
+
+@mixin para() {
+	@include font-size(4rem);
+	line-height: 120%;
+
+	@include media-breakpoint-up(md) {
+	}
+}
+
+p {
+	@include para;
+}
+
+@mixin para-large() {
+	@include font-size(1.6rem);
+	line-height: 140%;
+	font-weight: 300;
+
+	@include media-breakpoint-up(md) {
+		@include font-size(2.4rem);
+	}
+}
+
+.para-large {
+	@include para-large;
+}

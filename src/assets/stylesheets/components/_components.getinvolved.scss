@@ -1,0 +1,44 @@
+.c-getinvolved {
+  @include text-center;
+  @include text-uppercase;
+  background-color: $color-brand-tertiary;
+  bottom: 10px;
+  border-radius: 50%;
+  display: block;
+  position: fixed;
+  height: 95px;
+  right: 10px;
+  width: 95px;
+  z-index: 4000;
+
+  @include media-breakpoint-up(md) {
+    bottom: 20px;
+    height: 160px;
+    right: 20px;
+    width: 160px;
+  }
+
+  span {
+    @include font-drunk-wide;
+    @include font-size(1rem);
+    @include vertical-center(relative);
+    color: $color-brand-primary;
+    display: inline-block;
+
+    @include media-breakpoint-up(md) {
+      @include font-size(1.7rem);
+    }
+  }
+
+  body.is-nav-open & {
+    background-color: $color-brand-primary;
+
+    span {
+      color: $color-brand-tertiary;
+    }
+  }
+
+  body.page-about.is-nav-open & {
+    background-color: $color-brand-secondary;
+  }
+}

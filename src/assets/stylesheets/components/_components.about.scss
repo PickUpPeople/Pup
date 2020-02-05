@@ -1,0 +1,65 @@
+.c-about {
+  @include global-component-margins;
+}
+
+.c-about__section {
+  @include global-component-margins;
+  @include make-col-ready();
+  @include make-col(12);
+  display: flex;
+  flex-wrap: wrap;
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+
+    .c-about__media {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
+
+.c-about__content {
+  text-align: center;
+  flex: 100%;
+
+  @include media-breakpoint-up(lg) {
+    flex: 50% 0;
+    padding: 0 $unit-xlarge;
+  }
+
+  svg {
+    margin-bottom: $unit;
+  }
+
+  h2 {
+    color: $color-brand-secondary;
+    margin-bottom: $unit;
+
+    span {
+      @include font-size(2.4rem);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      line-height: 140%;
+      display: block;
+      color: $color-grey;
+    }
+  }
+
+  p {
+    margin-bottom: $unit;
+  }
+}
+
+.c-about__media {
+  flex: 100%;
+  margin-left: auto;
+
+  @include media-breakpoint-up(lg) {
+    flex: 50% 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}

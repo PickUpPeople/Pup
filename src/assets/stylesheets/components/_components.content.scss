@@ -1,0 +1,30 @@
+.c-content {
+	@include global-component-margins;
+}
+
+.c-content__text {
+	@include make-col-ready();
+	@include make-col(12);
+
+	@include media-breakpoint-up(lg) {
+		@include make-col(10);
+		@include make-col-offset(1);
+	}
+
+	@include media-breakpoint-up(xl) {
+		@include make-col(8);
+		@include make-col-offset(2);
+	}
+
+	p {
+		margin-bottom: 20px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	strong {
+		font-weight: 900;
+	}
+}

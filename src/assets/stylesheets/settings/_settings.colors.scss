@@ -1,0 +1,24 @@
+﻿// =============================================================================
+// Colour Settings
+// =============================================================================
+
+// Brand Colours
+// -----------------------------------------------------------------------------
+//
+// Purpose: All the colours used throughout the site
+//
+//
+// 1. Brand colours (always use sequence names for the brand colours e.g. primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary)
+// 1. We don't want any colours specified by name apart from - black, white & grey (light/dark variations are fine)
+// 2. Other global colours
+// 3. Social brand colours
+//
+// -----------------------------------------------------------------------------
+
+// 1
+$color-black: #000000;
+$color-brand-primary: rgb(230, 76, 60); //#e74c3c;
+$color-brand-secondary: rgb(66, 113, 107); //#42716B;
+$color-brand-tertiary: rgb(246, 242, 227); //#f6f2e3;
+$color-grey: #9b9b9b;
+$color-white: #ffffff;

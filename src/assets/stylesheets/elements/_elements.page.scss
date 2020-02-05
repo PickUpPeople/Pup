@@ -1,0 +1,37 @@
+﻿html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+
+  ::-moz-selection {
+    color: $color-brand-tertiary;
+    background: $color-brand-primary;
+  }
+
+  ::selection {
+    color: $color-brand-tertiary;
+    background: $color-brand-primary;
+  }
+}
+
+body {
+  @include font-miso();
+  background-color: $color-brand-primary;
+  cursor: none;
+  color: $color-brand-tertiary;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  text-rendering: optimizeLegibility;
+}
+
+.svg-circle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: 1000000;
+
+  image {
+    fill: white;
+  }
+}

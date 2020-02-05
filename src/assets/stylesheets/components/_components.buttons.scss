@@ -1,0 +1,68 @@
+.c-btn {
+  @include para;
+  background-color: transparent;
+  border: solid 1px transparent;
+  border-radius: 21px;
+  color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 100%;
+  margin: 0;
+  padding: $unit-xxsmall $unit-large;
+  text-decoration: none;
+
+  html.no-touchevents & {
+    @include hocus {
+      background-color: transparent;
+      color: transparent;
+    }
+  }
+
+  // 1
+  i {
+    display: inline-block;
+    margin-left: $unit-xxsmall;
+    vertical-align: bottom;
+  }
+}
+
+.c-btn--primary {
+  background-color: transparent;
+  border-color: $color-brand-secondary;
+  color: $color-brand-secondary;
+
+  @include hocus {
+    background-color: $color-brand-secondary;
+    border-color: $color-brand-secondary;
+    color: $color-white;
+  }
+}
+
+.c-btn--secondary {
+  background-color: $color-brand-secondary;
+  border-color: $color-brand-secondary;
+  color: $color-white;
+
+  @include hocus {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-brand-secondary;
+  }
+}
+
+.c-btn--tertiary {
+  background-color: $color-white;
+  border-color: $color-white;
+  color: $color-brand-primary;
+
+  @include hocus {
+    background-color: $color-brand-secondary;
+    border-color: $color-brand-secondary;
+    color: $color-white;
+  }
+}
+
+.c-btn--disable {
+  pointer-events: none;
+  cursor: default;
+}

@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "PUP",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "404.html"
+    }
+  ],
+  "regions": ["lhr1"]
+}

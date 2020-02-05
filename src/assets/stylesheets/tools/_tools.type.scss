@@ -1,0 +1,66 @@
+﻿// =============================================================================
+// Type Styles
+// =============================================================================
+
+@font-face {
+  font-family: "Pick Up";
+  src: url("/fonts/PickUp-Regular.woff2") format("woff2"),
+    url("/fonts/PickUp-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-pick-up() {
+  font-family: "Pick Up", sans-serif;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("/fonts/FoundersGrotesk-Light.woff2") format("woff2"),
+    url("/fonts/FoundersGrotesk-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-founders-grotesk() {
+  font-family: "Founders Grotesk", sans-serif;
+}
+
+@font-face {
+  font-family: "Founders Grotesk Test";
+  src: url("/fonts/FoundersGroteskTest-Bold.woff2") format("woff2"),
+    url("/fonts/FoundersGroteskTest-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin font-founders-grotesk-test() {
+  font-family: "Founders Grotesk Test", sans-serif;
+}
+
+@font-face {
+  font-family: "Druk Wide";
+  src: url("/fonts/Druk-WideMedium.woff2") format("woff2"),
+    url("/fonts/Druk-WideMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin font-drunk-wide() {
+  font-family: "Druk Wide", sans-serif;
+}
+
+@font-face {
+  font-family: "Miso";
+  src: url("/fonts/Miso.woff2") format("woff2"),
+    url("/fonts/Miso.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@mixin font-miso() {
+  font-family: "Miso", sans-serif;
+}

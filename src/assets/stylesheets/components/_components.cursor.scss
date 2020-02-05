@@ -1,0 +1,38 @@
+.c-cursor {
+  height: 52px;
+  position: fixed;
+  width: 52px;
+  z-index: 3000;
+  pointer-events: none;
+  border: none;
+  outline: none;
+}
+
+html.user-is-touching .c-cursor {
+  display: none;
+}
+
+.c-cursor--home {
+  background: transparent url("../images/cursor-sand.svg") 0 0 no-repeat;
+}
+
+.c-cursor--about {
+  background: transparent url("../images/cursor-red.svg") 0 0 no-repeat;
+}
+
+.c-cursor--content {
+  background: transparent url("../images/cursor-green.svg") 0 0 no-repeat;
+}
+
+.c-cursor--hover {
+  animation: shadow-pulse 1s infinite;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}

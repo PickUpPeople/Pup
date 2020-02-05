@@ -1,0 +1,68 @@
+.c-scroller {
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  html.scroller-loader & {
+    opacity: 1;
+  }
+}
+
+.c-scroller__column {
+  @include make-col-ready();
+  @include make-col(12);
+
+  @include media-breakpoint-up(md) {
+    @include make-col(5.5);
+  }
+}
+
+#right2 {
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    top: 0;
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+}
+
+.c-scroller__link {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 6px;
+    margin-bottom: 60px;
+  }
+}
+
+.c-scroller__image {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.c-scroller__link:hover {
+  .c-scroller__image {
+    transform: scale(1.2);
+  }
+}
+
+.c-scroller__logo {
+  @include vertical-and-horizontal(fixed);
+  pointer-events: none;
+  display: block;
+  margin: 0 auto;
+  z-index: 1000;
+  width: 150px;
+
+  @include media-breakpoint-up(md) {
+    width: 240px;
+  }
+}

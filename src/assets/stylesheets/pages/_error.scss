@@ -1,0 +1,12 @@
+.page-error {
+}
+
+.page-error__section {
+	@include make-col-ready();
+	@include make-col(6);
+	padding: 80px 0;
+
+	h1 {
+		margin-bottom: $unit-large;
+	}
+}
