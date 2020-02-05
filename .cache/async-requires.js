@@ -9,7 +9,6 @@ exports.components = {
   "component---src-pages-content-js": () => import("./../src/pages/content.js" /* webpackChunkName: "component---src-pages-content-js" */),
   "component---src-pages-hoops-js": () => import("./../src/pages/hoops.js" /* webpackChunkName: "component---src-pages-hoops-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-players-js": () => import("./../src/pages/players.js" /* webpackChunkName: "component---src-pages-players-js" */),
-  "component---src-pages-test-js": () => import("./../src/pages/test.js" /* webpackChunkName: "component---src-pages-test-js" */)
+  "component---src-pages-players-js": () => import("./../src/pages/players.js" /* webpackChunkName: "component---src-pages-players-js" */)
 }
 

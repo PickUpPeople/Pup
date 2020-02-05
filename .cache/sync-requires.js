@@ -12,7 +12,6 @@ exports.components = {
   "component---src-pages-content-js": hot(preferDefault(require("/Users/adamwright/Documents/Development/pickUpLive/src/pages/content.js"))),
   "component---src-pages-hoops-js": hot(preferDefault(require("/Users/adamwright/Documents/Development/pickUpLive/src/pages/hoops.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/adamwright/Documents/Development/pickUpLive/src/pages/index.js"))),
-  "component---src-pages-players-js": hot(preferDefault(require("/Users/adamwright/Documents/Development/pickUpLive/src/pages/players.js"))),
-  "component---src-pages-test-js": hot(preferDefault(require("/Users/adamwright/Documents/Development/pickUpLive/src/pages/test.js")))
+  "component---src-pages-players-js": hot(preferDefault(require("/Users/adamwright/Documents/Development/pickUpLive/src/pages/players.js")))
 }
 
