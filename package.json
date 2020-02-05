@@ -1,7 +1,7 @@
 {
   "name": "pup",
   "description": "Pick up People photography site",
-  "version": "1",
+  "version": "0.1.0",
   "author": "Adam Wright <adam.wright90@yahoo.co.uk>",
   "dependencies": {
     "gatsby": "^2.18.22",
