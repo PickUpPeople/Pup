@@ -63,7 +63,7 @@ Via portrait photography, the project explores themes of human experience, socia
       options: {
         host: `https://www.pickuppeople.co`,
         sitemap: `https://www.pickuppeople.co/sitemap.xml`,
-        policy: [{ userAgent: "*", disallow: ["/"] }]
+        policy: [{ userAgent: "*", allow: "/" }]
       }
     },
     {
