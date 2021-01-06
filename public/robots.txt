@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.pickuppeople.co/sitemap.xml
+Host: https://www.pickuppeople.co
