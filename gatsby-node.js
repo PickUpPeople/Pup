@@ -1,37 +1,37 @@
-const path = require("path");
+const path = require( "path" );
 
-exports.createPages = async ({ actions, graphql }) => {
+exports.createPages = async ( { actions, graphql } ) => {
   const { createPage } = actions;
 
-  const { data } = await graphql(`
+  const { data } = await graphql( `
     query ContentPages {
       allPrismicItem {
-        edges {
-          node {
-            uid
+      edges {
+      node {
+      uid
             data {
-              type
-            }
+      type
+    }
           }
         }
       }
     }
-  `);
+`);
 
-  data.allPrismicItem.edges.forEach(({ node }) => {
-    createPage({
-      path: `/${node.data.type}/${node.uid}`,
+  data.allPrismicItem.edges.forEach( ( { node } ) => {
+    createPage( {
+      path: `/${ node.data.type }/${ node.uid }`,
       component: path.resolve("./src/templates/content-template.js"),
       context: {
         uid: node.uid
       }
-    });
-  });
+    } );
+  } );
 };
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html") {
-    actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ( { stage, loaders, actions } ) => {
+  if ( stage === "build-html" ) {
+    actions.setWebpackConfig( {
       module: {
         rules: [
           {
@@ -40,14 +40,14 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
           }
         ]
       }
-    });
+    } );
   }
 
   // If production JavaScript and CSS build
-  if (stage === "build-javascript") {
+  if ( stage === "build-javascript" ) {
     // Turn off source maps
-    actions.setWebpackConfig({
+    actions.setWebpackConfig( {
       devtool: false
-    });
+    } );
   }
 };

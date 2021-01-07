@@ -1,6 +1,6 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
+require( "dotenv" ).config( {
+  path: `.env.${ process.env.NODE_ENV }`
+} );
 
 module.exports = {
   siteMetadata: {
@@ -35,7 +35,7 @@ Via portrait photography, the project explores themes of human experience, socia
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`
+        path: `${ __dirname }/src/assets/images`
       }
     },
     {
@@ -43,7 +43,11 @@ Via portrait photography, the project explores themes of human experience, socia
       options: {
         repositoryName: `PickUpPeople`,
         accessToken: `MC5YaWdRV1JBQUFDSUFTSkdO.77-977-9XyEQ77-977-977-9BgLvv71WAe-_ve-_ve-_vUTvv70P77-977-9NWM_77-9YR4mNU_vv70W`,
-        linkResolver: ({ node, key, value }) => post => `/${post.uid}`
+        linkResolver: ( { node, key, value } ) => post => `/${ post.uid }`,
+        schemas: {
+          exhibition: require( './src/schemas/exhibition.json' ),
+          item: require( './src/schemas/item.json' ),
+        },
       }
     },
     {
